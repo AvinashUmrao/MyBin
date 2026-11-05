@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #c0ff86;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    background: #45623a;
+}
+
+label {
+    display: inline-block;
+    margin: 8px 0;
+}
+
+input, select, textarea {
+    padding: 5px;
+}
+
+button {
+    margin: 15px;
+}
