@@ -1,0 +1,13 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+select {
+  width: 200px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
