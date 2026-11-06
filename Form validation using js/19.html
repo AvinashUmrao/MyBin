@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="19.css">
+    <script src="19.js" defer></script>
+</head>
+<body>
+    <form id="registrationForm">
+        <h2>Registration Form</h2>
+
+        <label>Login Id <input id="loginId" type="text"></label>
+
+        <br>
+        <label>Email<input id="email" type="text"></label>
+
+        <br>
+        <label>Name<input id="name" type="text"></label>
+
+        <br>
+        <label>Timezone<select id="timezone">
+                <option>GMT</option>
+                <option>IST</option>
+                <option>EST</option>
+            </select>
+        </label>
+
+        <br>
+        <label>Home Page<input id="homePage" type="text"></label>
+
+        <br>
+        <label>About me<textarea id="aboutMe"></textarea></label>
+
+        <br>
+        <label><input id="notification" type="checkbox">
+            Receive notification of comments.
+        </label>
+
+        <p>You will be sent an email when someone posts comments to your Blog or Album.</p>
+        <p>Your password will be mailed to you.</p>
+
+        <button type="submit">GO</button>
+    </form>
+</body>
+</html>

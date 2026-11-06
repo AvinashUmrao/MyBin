@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #9bff8b;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    background: oklch(58.658% 0.08272 137.687);
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+}
+
+input, select, textarea, button{
+    padding: 5px;
+}
