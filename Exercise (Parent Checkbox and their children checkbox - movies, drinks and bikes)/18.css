@@ -1,0 +1,10 @@
+.checkbox-container {
+  height: 100px;
+  width: 300px;
+  overflow-y: auto;
+}
+
+.children {
+  display: none;
+  padding-left: 25px;
+}
