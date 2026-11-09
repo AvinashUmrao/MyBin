@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="5.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h2>Registration Form</h2>
+
+    <form id="registrationForm">
+
+      <p>Login Id:<input type="text" id="loginId"></p>
+
+      <p>Email:<input type="text" id="email"><span id="emailError"></span></p>
+
+      <p>Name:<input type="text" id="name"></p>
+
+      <p>Timezone:
+        <select id="timezone">
+          <option>GMT</option>
+          <option>IST</option>
+          <option>EST</option>
+        </select>
+      </p>
+
+      <p>Home Page:<input type="text" id="homepage"><span id="homepageError"></span></p>
+
+      <p>About me:</p>
+      <textarea id="about"></textarea>
+
+      <p><input type="checkbox" id="notification">Receive notification of comments.</p>
+
+      <p>You will be sent an email when someone posts comments to your Blog or Album.</p>
+      <p class="password">Your password will be mailed to you.</p>
+      <button type="submit">GO</button>
+    </form>
+
+  </div>
+  <script src="5.js"></script>
+</body>
+</html>

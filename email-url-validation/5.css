@@ -1,0 +1,49 @@
+body {
+  font-family: Arial;
+  background-color: lightgray;
+}
+
+.container {
+  width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: lightgreen;
+}
+
+h2 {
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+}
+
+input, select {
+  padding: 5px;
+  width: 250px;
+}
+
+textarea {
+  width: 95%;
+  height: 150px;
+}
+
+#emailError, #homepageError {
+  color: red;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
