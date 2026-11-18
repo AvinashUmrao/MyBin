@@ -4,19 +4,18 @@ class User {
     this.age = age;
   }
 
-  compare(otherUser) {
+  compare = (otherUser) => {
     
     if (this.age > otherUser.age) {
       return `${this.name} is older than ${otherUser.name}`;
     } 
    
-    else if (this.age < otherUser.age) {
+    if (this.age < otherUser.age) {
       return `${otherUser.name} is older than ${this.name}`;
     } 
    
-    else {
-      return `${this.name} and ${otherUser.name} are the same age`;
-    }
+    return `${this.name} and ${otherUser.name} are the same age`;
+  
   }
 }
 
