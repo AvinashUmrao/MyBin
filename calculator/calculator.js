@@ -29,21 +29,35 @@ class Calculator {
   }
 
   calculate() {
-    if (this.expression === "") {
-      return;
-    }
+    if (this.expression === "") return;
+
+    let result;
 
     try {
-      let result = eval(this.expression);
+      let match = this.expression.match(/^([0-9.]+)([+\-*/])([0-9.]+)$/);
+
+      if (!match || isNaN(Number(match[1])) || isNaN(Number(match[3]))) {
+        throw new Error("Invalid expression");
+      }
+
+      let a = Number(match[1]);
+      let operator = match[2];
+      let b = Number(match[3]);
+
+      if (operator === "+") result = a + b;
+      else if (operator === "-") result = a - b;
+      else if (operator === "*") result = a * b;
+      else if (operator === "/") {
+        if (b === 0) throw new Error("Cannot divide by zero");
+        result = a / b;
+      }
 
       if (!Number.isFinite(result)) {
-        this.display.value = "Error";
-        this.expression = "";
-        return;
+        throw new Error("Invalid result");
       }
 
       this.display.value = result;
-      this.expression = result;
+      this.expression = String(result);
     }
     catch (error) {
       this.display.value = "Error";
@@ -51,4 +65,5 @@ class Calculator {
     }
   }
 }
+
 let calculator = new Calculator();
