@@ -9,7 +9,7 @@ class Calculator {
   init() {
     this.buttons.forEach(button => {
       button.addEventListener("click", () => {
-        let value = button.dataset.value;
+        const value = button.dataset.value;
 
         if (value === "C") {
           this.expression = "";
@@ -34,15 +34,15 @@ class Calculator {
     let result;
 
     try {
-      let match = this.expression.match(/^([0-9.]+)([+\-*/])([0-9.]+)$/);
+      const match = this.expression.match(/^([0-9.]+)([+\-*/])([0-9.]+)$/);
 
       if (!match || isNaN(Number(match[1])) || isNaN(Number(match[3]))) {
         throw new Error("Invalid expression");
       }
 
-      let a = Number(match[1]);
-      let operator = match[2];
-      let b = Number(match[3]);
+      const a = Number(match[1]);
+      const operator = match[2];
+      const b = Number(match[3]);
 
       if (operator === "+") result = a + b;
       else if (operator === "-") result = a - b;
@@ -66,4 +66,4 @@ class Calculator {
   }
 }
 
-let calculator = new Calculator();
+const calculator = new Calculator();
